@@ -7,8 +7,9 @@ Created on Wed Mar 29 22:33:14 2023
 
 import Gpt4Sender 
 
+API_KEY = "your api key"
 test = Gpt4Sender("testingthisout@outlook.fr","Cacahuete(-)",
-                  "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",
+                  API_key,
                   "https://api.openai.com/v1/chat/completions",1,1)
 
 

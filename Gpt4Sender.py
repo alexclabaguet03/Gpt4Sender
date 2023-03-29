@@ -59,7 +59,8 @@ class Gpt4Sender:
        print("-------------------------------")
        to_addresses = input("Enter recipient email addresses separated by commas: ").split(',')
        subject = input("Email subject: ")
-       body = response_text + "\n\nSincerely,\n\nAlex Lecon\n\nepflaiteam.ch"
+       signature = input("Signature: ")
+       body = response_text + "\n\nSincerely,\n\n" +signature+"\n\nepflaiteam.ch"
        msg = MIMEMultipart()
        msg['Subject'] = subject
        msg.attach(MIMEText(body, 'plain'))
